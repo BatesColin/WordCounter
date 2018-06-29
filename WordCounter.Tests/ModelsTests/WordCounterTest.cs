@@ -20,7 +20,20 @@ namespace WordCounter.Tests
      //assert
      Assert.AreEqual(testword, result);
    }
+   [TestMethod]
+   public void SetSentence_True()
+   {
+   //arrange
+   string testsentence = "i Love Tests";
+   RepeatCounter newRepeatCounter = new RepeatCounter();
 
+   //act
+   newRepeatCounter.SetSentence(testsentence);
+   string result = newRepeatCounter.GetSentence();
+
+   //assert
+   Assert.AreEqual(testsentence, result);
+  }
     // [TestMethod]
     // public void ExampleTest_True()
     // {
