@@ -28,21 +28,23 @@ namespace WordCounter.Tests
    RepeatCounter newRepeatCounter = new RepeatCounter();
 
    //act
-   newRepeatCounter.SetSentence(testsentence);
+   newRepeatCounter.SetSentence(string testsentence);
    string result2 = newRepeatCounter.GetSentence();
 
    //assert
    Assert.AreEqual(testsentence, result2);
   }
-    // [TestMethod]
-    // public void ExampleTest_True()
-    // {
-    //   //arrange
-    //   string testword =
-    //   RepeatCounter NewRepeatCounter = new RepeatCounter();
-    //   //act
-    //   NewRepeatCounter.SentenceSplitter
-    //   //assert
+    [TestMethod]
+    public void ExampleTest_True()
+    {
+      //arrange
+      string testsplit =
+      RepeatCounter NewRepeatCounter = new RepeatCounter();
+      //act
+      NewRepeatCounter.SentencSplitter(string testsplit);
+      string[] result3 = NewRepeatCounter.SentenceSplitter();
+      //assert
+      assert.AreEqual(testsplit, result3);
     }
   }
 }

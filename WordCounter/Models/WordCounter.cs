@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace WordCounter
 {
@@ -19,11 +20,14 @@ namespace WordCounter
     {
       _inputSentence = inputSentence;
     }
-    public string Getsentence()
+    public string GetSentence()
     {
       return _inputSentence;
     }
-    
+    public string[] SentenceSplitter()
+    {
+    string[] splitSentance= _inputsentence.Split(' ')
+   }
 
   }
   public class Program
