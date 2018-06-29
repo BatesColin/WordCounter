@@ -29,10 +29,10 @@ namespace WordCounter.Tests
 
    //act
    newRepeatCounter.SetSentence(testsentence);
-   string result = newRepeatCounter.GetSentence();
+   string result2 = newRepeatCounter.GetSentence();
 
    //assert
-   Assert.AreEqual(testsentence, result);
+   Assert.AreEqual(testsentence, result2);
   }
     // [TestMethod]
     // public void ExampleTest_True()

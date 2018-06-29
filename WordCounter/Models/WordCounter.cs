@@ -5,6 +5,7 @@ namespace WordCounter
 {
   public class RepeatCounter
   {
+    private string _inputSentence;
     private string _inputWord;
     public void SetWord(string inputWord)
     {
@@ -14,6 +15,15 @@ namespace WordCounter
     {
       return _inputWord;
     }
+    public void SetSentence(string inputSentence)
+    {
+      _inputSentence = inputSentence;
+    }
+    public string Getsentence()
+    {
+      return _inputSentence;
+    }
+    
 
   }
   public class Program
@@ -24,7 +34,8 @@ namespace WordCounter
       Console.WriteLine("give me any word");
       string word = Console.ReadLine();
       newRepeatCounter.SetWord(word);
-
+      Console.WriteLine("Give me a list of words or a sentence.")
+      string sentence = Console.ReadLine();
     }
   }
 }
