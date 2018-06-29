@@ -4,12 +4,32 @@ using WordCounter;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class WordCounterTest
+  public class RepeatCounter
   {
     [TestMethod]
-    public void ExampleTest_True()
-    {
-      // eventually your testing code will go here
+    public void SetWord_True()
+   {
+     //arrange
+     string testword = "iLoveTests";
+     RepeatCounter newRepeatCounter = new RepeatCounter();
+
+     //act
+     newRepeatCounter.SetWord(testword);
+     string result = newRepeatCounter.GetWord();
+
+     //assert
+     Assert.AreEqual(testword, result);
+   }
+
+    // [TestMethod]
+    // public void ExampleTest_True()
+    // {
+    //   //arrange
+    //   string testword =
+    //   RepeatCounter NewRepeatCounter = new RepeatCounter();
+    //   //act
+    //   NewRepeatCounter.SentenceSplitter
+    //   //assert
     }
   }
 }
