@@ -28,7 +28,7 @@ namespace WordCounter.Tests
    RepeatCounter newRepeatCounter = new RepeatCounter();
 
    //act
-   newRepeatCounter.SetSentence(string testsentence);
+   newRepeatCounter.SetSentence(testsentence);
    string result2 = newRepeatCounter.GetSentence();
 
    //assert
@@ -37,11 +37,11 @@ namespace WordCounter.Tests
     [TestMethod]
     public void ExampleTest_True()
     {
-      //arrange
-      string testsplit =
+            //arrange
+            string testsplit = ;
       RepeatCounter NewRepeatCounter = new RepeatCounter();
       //act
-      NewRepeatCounter.SentencSplitter(string testsplit);
+      NewRepeatCounter.SentencSplitter(testsplit);
       string[] result3 = NewRepeatCounter.SentenceSplitter();
       //assert
       assert.AreEqual(testsplit, result3);
