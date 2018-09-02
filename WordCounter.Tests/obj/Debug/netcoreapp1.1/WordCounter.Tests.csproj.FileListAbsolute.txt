@@ -1,4 +1,0 @@
-C:\Users\Bates\desktop\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.csprojAssemblyReference.cache
-C:\Users\Bates\desktop\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.csproj.CoreCompileInputs.cache
-C:\Users\Bates\desktop\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.AssemblyInfoInputs.cache
-C:\Users\Bates\desktop\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.AssemblyInfo.cs

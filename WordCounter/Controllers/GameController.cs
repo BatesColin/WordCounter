@@ -22,11 +22,14 @@ using WordCounter.Models;
 
     [HttpPost("/items")]
     public ActionResult Create()
-    {
-      
+    {     
       RepeatCounter newRepeatCounter = new RepeatCounter ();
-      RepeatCounter.
+      newRepeatCounter.SetSentence(Request.Form["new-sentence"]);
+      newRepeatCounter.SetWord(Request.Form["new-word"]);
+      newRepeatCounter.Score( newRepeatCounter.SentenceSplitter());
+      return View("index", newRepeatCounter);
     }
+
 
   }
 }

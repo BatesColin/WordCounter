@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WordCounter
+namespace WordCounter.Models
 {
     public class RepeatCounter
     {
@@ -23,7 +23,7 @@ namespace WordCounter
         }
          public int GetScore()
         {
-        return _counter;
+        return Points;
         }
         public string GetSentence()
         {
@@ -34,7 +34,7 @@ namespace WordCounter
             string[] splitSentance = _inputSentence.Split(' ');
             return splitSentance;
         }
-        public void score(String[] splitSentance)
+        public void Score(String[] splitSentance)
         {
             foreach (string splitWord in splitSentance)
             {
@@ -45,10 +45,7 @@ namespace WordCounter
             }
 
         }
-        public int points()
-        {
-            return Points;
-        }
+       
     }
     // public class Program
     // {

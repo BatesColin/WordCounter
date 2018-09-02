@@ -10685,11 +10685,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bates\\desktop\\WordCounter.solution\\WordCounter.Tests\\WordCounter.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Bates\\desktop\\WordCounter.Solution\\WordCounter.Tests\\WordCounter.Tests.csproj",
       "projectName": "WordCounter.Tests",
-      "projectPath": "C:\\Users\\Bates\\desktop\\WordCounter.solution\\WordCounter.Tests\\WordCounter.Tests.csproj",
+      "projectPath": "C:\\Users\\Bates\\desktop\\WordCounter.Solution\\WordCounter.Tests\\WordCounter.Tests.csproj",
       "packagesPath": "C:\\Users\\Bates\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bates\\desktop\\WordCounter.solution\\WordCounter.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Bates\\desktop\\WordCounter.Solution\\WordCounter.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bates\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10706,8 +10706,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\Bates\\desktop\\WordCounter.solution\\WordCounter\\WordCounter.csproj": {
-              "projectPath": "C:\\Users\\Bates\\desktop\\WordCounter.solution\\WordCounter\\WordCounter.csproj"
+            "C:\\Users\\Bates\\desktop\\WordCounter.Solution\\WordCounter\\WordCounter.csproj": {
+              "projectPath": "C:\\Users\\Bates\\desktop\\WordCounter.Solution\\WordCounter\\WordCounter.csproj"
             }
           }
         }
