@@ -38,7 +38,7 @@ namespace WordCounter.Tests
     public void ExampleTest_True()
     {
             //arrange
-            string testsplit = ;
+            string testsplit = "";
       RepeatCounter NewRepeatCounter = new RepeatCounter();
       //act
       NewRepeatCounter.SentencSplitter(testsplit);

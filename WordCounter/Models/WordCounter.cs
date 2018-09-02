@@ -21,6 +21,10 @@ namespace WordCounter
         {
             _inputSentence = inputSentence;
         }
+         public int GetScore()
+        {
+        return _counter;
+        }
         public string GetSentence()
         {
             return _inputSentence;
@@ -46,29 +50,29 @@ namespace WordCounter
             return Points;
         }
     }
-    public class Program
-    {
-        public static void Main()
-        {
-            RepeatCounter newRepeatCounter = new RepeatCounter();
-            RepeatCounter otherRepeatCounter = new RepeatCounter();
-            Console.WriteLine("give me any word");
-            string word = Console.ReadLine();
-            newRepeatCounter.SetWord(word);
-            otherRepeatCounter.SetWord(word);
-            Console.WriteLine("Give me a list of words or a sentence.");
-            string sentence = Console.ReadLine();
-            newRepeatCounter.SetSentence(sentence);
-            Console.WriteLine("Give me another list of words or a sentence.");
-            sentence = Console.ReadLine();
-            otherRepeatCounter.SetSentence(sentence);
-            newRepeatCounter.score(newRepeatCounter.SentenceSplitter());
-            otherRepeatCounter.score(otherRepeatCounter.SentenceSplitter());
-            string result = newRepeatCounter.points() + " Time(s), you reused " + word + "." ;
-            string result2 = otherRepeatCounter.points() + " Time(s), you reused " + word + ".";
-            Console.WriteLine(result);
-            Console.WriteLine(result2);
-            Console.ReadLine();
-        }
-    }
+    // public class Program
+    // {
+    //     public static void Main()
+    //     {
+    //         RepeatCounter newRepeatCounter = new RepeatCounter();
+    //         RepeatCounter otherRepeatCounter = new RepeatCounter();
+    //         Console.WriteLine("give me any word");
+    //         string word = Console.ReadLine();
+    //         newRepeatCounter.SetWord(word);
+    //         otherRepeatCounter.SetWord(word);
+    //         Console.WriteLine("Give me a list of words or a sentence.");
+    //         string sentence = Console.ReadLine();
+    //         newRepeatCounter.SetSentence(sentence);
+    //         Console.WriteLine("Give me another list of words or a sentence.");
+    //         sentence = Console.ReadLine();
+    //         otherRepeatCounter.SetSentence(sentence);
+    //         newRepeatCounter.score(newRepeatCounter.SentenceSplitter());
+    //         otherRepeatCounter.score(otherRepeatCounter.SentenceSplitter());
+    //         string result = newRepeatCounter.points() + " Time(s), you reused " + word + "." ;
+    //         string result2 = otherRepeatCounter.points() + " Time(s), you reused " + word + ".";
+    //         Console.WriteLine(result);
+    //         Console.WriteLine(result2);
+    //         Console.ReadLine();
+    //     }
+    // }
 }
